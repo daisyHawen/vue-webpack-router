@@ -13,6 +13,7 @@
           <!--使用指令v-link进行导航-->
           <a class="list-group-item" v-link="{ path: '/home'}">Home</a>
           <a class="list-group-item" v-link="{ path: '/about'}">About</a>
+          <router-link class="list-group-item" to="/Hello">Hello</router-link>
         </div>
       </div>
       <div class="col-xs-6">
