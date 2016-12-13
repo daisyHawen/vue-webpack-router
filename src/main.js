@@ -3,6 +3,9 @@ import VueRouter from "vue-router"
 import Hello from './components/hello.vue'
 import About from './components/About.vue'
 import Home from './components/Home.vue'
+import News from './components/News.vue'
+import Message from './components/message.vue'
+
 Vue.use(VueRouter)
 
 const routes = [{
@@ -10,7 +13,15 @@ const routes = [{
 	component: Hello
 }, {
 	path: '/Home',
-	component: Home
+	component: Home,
+	subRoutes: {
+		'news': {
+			component: News
+		},
+		'message': {
+			component: Message
+		}
+	}
 }, {
 	path: '/About',
 	component: About
