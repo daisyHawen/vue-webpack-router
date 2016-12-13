@@ -8,20 +8,20 @@ import Message from './components/message.vue'
 
 Vue.use(VueRouter)
 
+
 const routes = [{
 	path: '/Hello',
 	component: Hello
 }, {
 	path: '/Home',
 	component: Home,
-	subRoutes: {
-		'news': {
-			component: News
-		},
-		'message': {
-			component: Message
-		}
-	}
+	children: [{
+		path: 'news',
+		component: News
+	}, {
+		path: 'message',
+		component: Message
+	}]
 }, {
 	path: '/About',
 	component: About

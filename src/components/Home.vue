@@ -7,10 +7,10 @@
 	<div>
 		<ul class="nav nav-tabs">
 			<li>
-                <router-link  to="/home/news">News</router-link>
+                <router-link  to="/Home/news">News</router-link>
 			</li>
 			<li>
-			    <router-link  to="/home/message">Message</router-link>	
+			    <router-link  to="/Home/message">Message</router-link>	
 			</li>
 		</ul>
 		<router-view></router-view>
