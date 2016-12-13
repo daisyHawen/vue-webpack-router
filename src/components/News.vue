@@ -1,20 +1,26 @@
 <template>
-    <div>
-    <div>
-		<h1>Home</h1>
-		<p>{{msg}}</p>
+<div>
+	<ul>
+		<li v-for="news in newsList">
+            <router-link :to="{ name: 'detail', params: { id: news.id} }">{{news.title}}</router-link>
+		</li>
+	</ul>
+	<div>
+		<router-view></router-view>
 	</div>
-	<h1>{{header}}</h1>
-	</div>
+</div>
 </template>
 
-<script>
-	export default {
-		data: function() {
+<script>	
+	export default{
+		data: function(){
 			return {
-				header:'News',
-				msg: 'Hello, vue router!'
+				newsList: [
+					{ id: '01', title: 'News 01'},
+					{ id: '02', title: 'News 02'},
+					{ id: '03', title: 'News 03'}
+				]
 			}
 		}
-	}
+	}	
 </script>

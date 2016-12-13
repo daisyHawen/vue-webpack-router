@@ -5,6 +5,7 @@ import About from './components/About.vue'
 import Home from './components/Home.vue'
 import News from './components/News.vue'
 import Message from './components/message.vue'
+import NewsDetail from './components/NewsDetail.vue'
 
 Vue.use(VueRouter)
 
@@ -17,7 +18,12 @@ const routes = [{
 	component: Home,
 	children: [{
 		path: 'news',
-		component: News
+		component: News,
+		children: [{
+			name: 'detail',
+			path: 'detail/:id',
+			component: NewsDetail
+		}]
 	}, {
 		path: 'message',
 		component: Message
