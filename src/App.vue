@@ -5,6 +5,7 @@
         <div class="page-header">
           <h2>Router Demo - 01</h2>
         </div>
+        <!-- <img src="./assets/logo.png" height="200" width="200"> -->
       </div>
     </div>
     <div class="row">
@@ -13,6 +14,9 @@
           <!--使用指令v-link进行导航-->
           <router-link class="list-group-item" :to="{path:'/Hello'}">Hello</router-link>
           <router-link class="list-group-item" :to="{path:'/about'}">About</router-link>
+          <!-- <router-link class="list-group-item" :to="{path:'/Blog'}">Blog</router-link> -->
+          <router-link class="list-group-item" :to="{path:'/Blog'}">Blog</router-link>
+          
           <router-link class="list-group-item" :to="{path:'/Home'}">Home</router-link>
         </div>
       </div>

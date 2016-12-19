@@ -3,6 +3,7 @@ import VueRouter from "vue-router"
 import Hello from './components/hello.vue'
 import About from './components/About.vue'
 import Home from './components/Home.vue'
+import Blog from './components/blog.vue'
 import News from './components/News.vue'
 import Message from './components/message.vue'
 import NewsDetail from './components/NewsDetail.vue'
@@ -11,6 +12,9 @@ Vue.use(VueRouter)
 
 
 const routes = [{
+	path: '/Blog',
+	component: Blog
+}, {
 	path: '/Hello',
 	component: Hello
 }, {
