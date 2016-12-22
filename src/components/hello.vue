@@ -2,6 +2,7 @@
     <div>
 		<h1>{{header}}</h1>
 		<p>{{msg}}</p>
+		<div></div>
 	</div>
 </template>
 
@@ -10,7 +11,7 @@
 		data: function() {
 			return {
 				header:'Hello',
-				msg: 'Hello, welcom to my vue-router'
+				msg: '这是我用vue-router搭建的小站，分享心情、电影、音乐、图书'
 			}
 		}
 	}

@@ -3,21 +3,22 @@
     <div class="row">
       <div class="col-xs-offset-2 col-xs-8">
         <div class="page-header">
-          <h2>Router Demo - 01</h2>
+          <h2>Daisy小站</h2>
         </div>
-        <!-- <img src="./assets/logo.png" height="200" width="200"> -->
       </div>
     </div>
     <div class="row">
       <div class="col-xs-2 col-xs-offset-2">
         <div class="list-group">
           <!--使用指令v-link进行导航-->
-          <router-link class="list-group-item" :to="{path:'/Hello'}">Hello</router-link>
-          <router-link class="list-group-item" :to="{path:'/about'}">About</router-link>
-          <!-- <router-link class="list-group-item" :to="{path:'/Blog'}">Blog</router-link> -->
-          <router-link class="list-group-item" :to="{path:'/Blog'}">Blog</router-link>
-          
-          <router-link class="list-group-item" :to="{path:'/Home'}">Home</router-link>
+          <router-link class="list-group-item" :to="{path:'/Hello'}">你好</router-link>
+          <router-link class="list-group-item" :to="{path:'/about'}">关于</router-link>
+          <router-link class="list-group-item" :to="{path:'/Blog'}">心情</router-link>
+          <router-link class="list-group-item" :to="{path:'/Movie'}">电影</router-link>
+          <router-link class="list-group-item" :to="{path:'/Music'}">音乐</router-link>
+          <router-link class="list-group-item" :to="{path:'/Home'}">空间</router-link>
+          <router-link class="list-group-item" :to="{path:'/Album'}">影记</router-link>
+
         </div>
       </div>
       <div class="col-xs-6">
@@ -45,6 +46,8 @@
 
 <style>
   body {
-    background-color: #f7f8f9;
+    /*background-color: #f7f8f9;*/
+    background-color: #EDf4ED;
+
   }
 </style>

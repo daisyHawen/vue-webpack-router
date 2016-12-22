@@ -4,6 +4,9 @@ import Hello from './components/hello.vue'
 import About from './components/About.vue'
 import Home from './components/Home.vue'
 import Blog from './components/blog.vue'
+import Music from './components/music.vue'
+import Album from './components/ablum.vue'
+import AlbumDetail from './components/subComponent/albumDetail.vue'
 import News from './components/News.vue'
 import Message from './components/message.vue'
 import NewsDetail from './components/NewsDetail.vue'
@@ -12,6 +15,17 @@ Vue.use(VueRouter)
 
 
 const routes = [{
+	path: '/Album',
+	component: Album,
+	children: [{
+		name: 'albums',
+		path: 'albums/:id',
+		component: AlbumDetail
+	}]
+}, {
+	path: '/Music',
+	component: Music
+}, {
 	path: '/Blog',
 	component: Blog
 }, {
@@ -48,6 +62,14 @@ new Vue({
 	render: h => h(App)
 }).$mount('#app');
 
+
+//获取flickr的照片
+// $.getJSON('https://api.flickr.com/services/rest/?&method=flickr.people.getPublicPhotos&api_key=56a8221a406f0c4f150601ed15512173&user_id=146067095@N06&format=json', function(result) {
+// 	$.each(result, function(i, val) {
+// 		console.log('test');
+// 		console.log(val);
+// 	})
+// })
 
 // import routes from './router-config.js'
 // import App from './App.vue'
