@@ -26,9 +26,9 @@
 			return {
 				msg: '谢谢你的到来',
 				albums: [
-					{ id: '01', title: '从南京路过',time:'20161214',query:'nanjing'},
-					{ id: '02', title:'坑爹的上海',time: '20161218',query:'shanghai'},
-					{ id: '03', title:'',time: '20161220'}
+					{ id: '01', title: '从你的全世界路过',time:'20161214',query:'nanjing'},
+					// { id: '02', title:'坑爹的上海',time: '20161218',query:'shanghai'},
+					// { id: '03', title:'',time: '20161220'}
 				]
 			}
 		}

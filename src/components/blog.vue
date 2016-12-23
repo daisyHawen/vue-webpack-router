@@ -7,7 +7,9 @@
 			<div class="list_item_content row" >
 				<div class="WB_screen "></div>
 				<div class="WB_face col-sm-2">
-					<img class="img-circle" src="../assets/x.jpg" height="50" width="50">
+		       <img class="img-circle" src="https://c1.staticflickr.com/1/775/31758330086_9a7b1d058d_q.jpg" height="50" width="50">
+
+					<!-- <img class="img-circle" src="../assets/x.jpg" height="50" width="50"> -->
 					<!-- <img :src="listitem.imgURL" height="50" width="50"> -->
 				</div>
 				<div class="WB_detail col-sm-10">
